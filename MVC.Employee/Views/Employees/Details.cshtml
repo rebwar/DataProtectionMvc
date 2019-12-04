@@ -1,0 +1,20 @@
+﻿@model Employee
+@{
+    ViewData["Title"] = "Details";
+}
+@{ Guid count = Model.Id;}
+<h1>Details</h1>
+@if (count != null) {
+<div class="card text-white bg-success mb-2" style="max-width: 18rem;">
+    <div class="card-header">Employee Details</div>
+    <div class="card-body">
+        <h5 class="card-title">@Model.Name @Model.Family</h5>
+        <p class="card-text">@Model.Age</p>
+        <p class="card-text">@Model.AccountNumber</p>
+
+    </div>
+   
+</div>
+}
+
+
